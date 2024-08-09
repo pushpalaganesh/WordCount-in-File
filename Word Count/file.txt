@@ -1,0 +1,17 @@
+Accept file name from a user whose word count we need to find. 
+
+Check whether the file is present in the system or not.  For that, we will use isfile() method from os module. isfile() method will return true if the file is found otherwise it will return false.
+
+If the File is present, open the file in read mode. Open another file in write mode and here we will store the word count
+
+The first file object will have all the lines from that file.
+
+Read the lines and split the lines by space separator.
+
+It will return a list of words, Now we can find the number of words from the line using len() function
+
+Iteratively we will get the total number of words from each line and we will store the sum of word count in variables.
+
+At last, write the total number of words into the second file. Here we need to type cast total word count from int to str before writing it into a file else it will throw an error
+
+At last close both the files.
